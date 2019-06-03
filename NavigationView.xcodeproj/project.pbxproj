@@ -14,6 +14,8 @@
 		C9FBA31222A0A60300B0661A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FBA31022A0A60300B0661A /* LaunchScreen.storyboard */; };
 		C9FBA31D22A0A60300B0661A /* NavigationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA31C22A0A60300B0661A /* NavigationViewTests.swift */; };
 		C9FBA32822A0A60300B0661A /* NavigationViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA32722A0A60300B0661A /* NavigationViewUITests.swift */; };
+		C9FEAB5022A205870007A35F /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAB4F22A205870007A35F /* ColorFilterViewController.swift */; };
+		C9FEAB5222A205910007A35F /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C9FBA32322A0A60300B0661A /* NavigationViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FBA32722A0A60300B0661A /* NavigationViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewUITests.swift; sourceTree = "<group>"; };
 		C9FBA32922A0A60300B0661A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FEAB4F22A205870007A35F /* ColorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorFilterViewController.swift; path = ../ColorFilterViewController.swift; sourceTree = "<group>"; };
+		C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		C9FBA2FB22A0A60100B0661A = {
 			isa = PBXGroup;
 			children = (
+				C9FEAB4F22A205870007A35F /* ColorFilterViewController.swift */,
 				C9FBA30622A0A60100B0661A /* NavigationView */,
 				C9FBA31B22A0A60300B0661A /* NavigationViewTests */,
 				C9FBA32622A0A60300B0661A /* NavigationViewUITests */,
@@ -99,6 +104,7 @@
 			children = (
 				C9FBA30722A0A60100B0661A /* AppDelegate.swift */,
 				C9FBA30922A0A60100B0661A /* ViewController.swift */,
+				C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */,
 				C9FBA30B22A0A60100B0661A /* Main.storyboard */,
 				C9FBA30E22A0A60300B0661A /* Assets.xcassets */,
 				C9FBA31022A0A60300B0661A /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				C9FBA30A22A0A60100B0661A /* ViewController.swift in Sources */,
 				C9FBA30822A0A60100B0661A /* AppDelegate.swift in Sources */,
+				C9FEAB5222A205910007A35F /* ColorFilterViewController.swift in Sources */,
+				C9FEAB5022A205870007A35F /* ColorFilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
