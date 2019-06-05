@@ -9,14 +9,56 @@
 import UIKit
 
 class ColorFilterViewController: UIViewController {
+    
+    
+    @IBOutlet weak var ColorImgView: UIImageView!
+    
+    
+    @IBOutlet weak var brightness: UISlider!
+    
+    @IBOutlet weak var contrast: UISlider!
+    
+    @IBOutlet weak var saturation: UISlider!
+    
+    struct orgImage {
+        static var Img = UIImage.init()
+    };
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        orgImage.Img = ColorImgView.image!
+        
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func ColorFilter(_ sender: Any) {
+        
+        let bright = Decimal(brightness.value)
+        let con = Decimal(contrast.value)
+        let sat = Decimal(saturation.value)
+        
+        let colorImg = orgImage.Img
+        let rawImage = CIImage(image: colorImg)
+        
+        let colorParams: [String : Any] = [kCIInputImageKey : rawImage, kCIInputSaturationKey : sat, kCIInputBrightnessKey : bright, kCIInputContrastKey : con]
+        
+        let colorFilter = CIFilter(name: "CIColorControls", parameters: colorParams)
+        
+        let context = CIContext(options: nil)
+        
+        if let output = colorFilter?.outputImage{
+            
+            if let ciImg = context.createCGImage(output, from: output.extent){
+                
+                ImgViewDisplay.image = UIImage(cgImage: ciImg)
+                
+                
+            }
+            
+        }
+    }
     /*
     // MARK: - Navigation
 
