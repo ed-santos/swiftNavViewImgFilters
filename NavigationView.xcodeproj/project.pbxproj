@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C942E5D822A5F40A00A41158 /* NoirFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942E5D722A5F40A00A41158 /* NoirFilterController.swift */; };
+		C942E5DA22A5F42300A41158 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942E5D922A5F42300A41158 /* ColorFilterViewController.swift */; };
 		C9FBA30822A0A60100B0661A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA30722A0A60100B0661A /* AppDelegate.swift */; };
 		C9FBA30A22A0A60100B0661A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA30922A0A60100B0661A /* ViewController.swift */; };
 		C9FBA30D22A0A60100B0661A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FBA30B22A0A60100B0661A /* Main.storyboard */; };
@@ -14,8 +16,10 @@
 		C9FBA31222A0A60300B0661A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FBA31022A0A60300B0661A /* LaunchScreen.storyboard */; };
 		C9FBA31D22A0A60300B0661A /* NavigationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA31C22A0A60300B0661A /* NavigationViewTests.swift */; };
 		C9FBA32822A0A60300B0661A /* NavigationViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FBA32722A0A60300B0661A /* NavigationViewUITests.swift */; };
+		C9FD007022A733BF00FF9DE5 /* DistortFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD006F22A733BF00FF9DE5 /* DistortFilterController.swift */; };
+		C9FD007222A73A7000FF9DE5 /* ComicFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD007122A73A7000FF9DE5 /* ComicFilterController.swift */; };
+		C9FD007622A73EA900FF9DE5 /* DoFfilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD007522A73EA900FF9DE5 /* DoFfilterController.swift */; };
 		C9FEAB5022A205870007A35F /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAB4F22A205870007A35F /* ColorFilterViewController.swift */; };
-		C9FEAB5222A205910007A35F /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C942E5D722A5F40A00A41158 /* NoirFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoirFilterController.swift; path = ../../../NavigationView/NoirFilterController.swift; sourceTree = "<group>"; };
+		C942E5D922A5F42300A41158 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorFilterViewController.swift; path = ../../ColorFilterViewController.swift; sourceTree = "<group>"; };
 		C9FBA30422A0A60100B0661A /* NavigationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FBA30722A0A60100B0661A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FBA30922A0A60100B0661A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +55,10 @@
 		C9FBA32322A0A60300B0661A /* NavigationViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FBA32722A0A60300B0661A /* NavigationViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewUITests.swift; sourceTree = "<group>"; };
 		C9FBA32922A0A60300B0661A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FD006F22A733BF00FF9DE5 /* DistortFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistortFilterController.swift; sourceTree = "<group>"; };
+		C9FD007122A73A7000FF9DE5 /* ComicFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicFilterController.swift; sourceTree = "<group>"; };
+		C9FD007522A73EA900FF9DE5 /* DoFfilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoFfilterController.swift; sourceTree = "<group>"; };
 		C9FEAB4F22A205870007A35F /* ColorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorFilterViewController.swift; path = ../ColorFilterViewController.swift; sourceTree = "<group>"; };
-		C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +112,15 @@
 			children = (
 				C9FBA30722A0A60100B0661A /* AppDelegate.swift */,
 				C9FBA30922A0A60100B0661A /* ViewController.swift */,
-				C9FEAB5122A205910007A35F /* ColorFilterViewController.swift */,
 				C9FBA30B22A0A60100B0661A /* Main.storyboard */,
+				C942E5D922A5F42300A41158 /* ColorFilterViewController.swift */,
+				C9FD006F22A733BF00FF9DE5 /* DistortFilterController.swift */,
+				C942E5D722A5F40A00A41158 /* NoirFilterController.swift */,
 				C9FBA30E22A0A60300B0661A /* Assets.xcassets */,
 				C9FBA31022A0A60300B0661A /* LaunchScreen.storyboard */,
 				C9FBA31322A0A60300B0661A /* Info.plist */,
+				C9FD007122A73A7000FF9DE5 /* ComicFilterController.swift */,
+				C9FD007522A73EA900FF9DE5 /* DoFfilterController.swift */,
 			);
 			path = NavigationView;
 			sourceTree = "<group>";
@@ -262,10 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C942E5DA22A5F42300A41158 /* ColorFilterViewController.swift in Sources */,
 				C9FBA30A22A0A60100B0661A /* ViewController.swift in Sources */,
 				C9FBA30822A0A60100B0661A /* AppDelegate.swift in Sources */,
-				C9FEAB5222A205910007A35F /* ColorFilterViewController.swift in Sources */,
 				C9FEAB5022A205870007A35F /* ColorFilterViewController.swift in Sources */,
+				C942E5D822A5F40A00A41158 /* NoirFilterController.swift in Sources */,
+				C9FD007222A73A7000FF9DE5 /* ComicFilterController.swift in Sources */,
+				C9FD007022A733BF00FF9DE5 /* DistortFilterController.swift in Sources */,
+				C9FD007622A73EA900FF9DE5 /* DoFfilterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
