@@ -72,9 +72,14 @@ class DoFfilterController: UIViewController {
     
     func applyDOF(){
         
+        let sat = Float(saturation.value)
+        let iRadius = Float(inputRadius.value)
+        let mRadius = Float(maskRadius.value)
+        let mIntensity = Float(maskIntensity.value)
+        
         let dofImg = orgImage.Img
         let rawImage = CIImage(image: dofImg)
-        let dofParams: [String : Any] = [kCIInputImageKey : rawImage, "inputPoint0" : CIVector(string: "[0 50]"), "inputPoint1" : CIVector(string: "[75 75]"), kCIInputSaturationKey : saturation, "inputUnsharpMaskRadius" : maskRadius, "inputUnsharpMaskIntensity" : maskIntensity, kCIInputRadiusKey : inputRadius]
+        let dofParams: [String : Any] = [kCIInputImageKey : rawImage, "inputPoint0" : CIVector(string: "[0 50]"), "inputPoint1" : CIVector(string: "[75 75]"), kCIInputSaturationKey : sat, "inputUnsharpMaskRadius" : mRadius, "inputUnsharpMaskIntensity" : mIntensity, kCIInputRadiusKey : iRadius]
         
         let dofFilter = CIFilter(name: "CIDepthOfField", parameters: dofParams)
         

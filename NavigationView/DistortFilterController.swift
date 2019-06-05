@@ -59,9 +59,13 @@ class DistortFilterController: UIViewController {
     
     func applyDistort(){
         
+        let rad = Float(radius.value)
+        let scal = Float(scale.value)
+        
+        
         let distortImg = orgImage.Img
         let rawImage = CIImage(image: distortImg)
-        let distortParams: [String : Any] = [kCIInputImageKey : rawImage, kCIInputCenterKey : CIVector(string: "[50 50]"), kCIInputRadiusKey : radius, kCIInputScaleKey : scale]
+        let distortParams: [String : Any] = [kCIInputImageKey : rawImage, kCIInputCenterKey : CIVector(string: "[50 50]"), kCIInputRadiusKey : rad, kCIInputScaleKey : scal]
         
         let distortFilter = CIFilter(name: "CIBumpDistortion", parameters: distortParams)
         

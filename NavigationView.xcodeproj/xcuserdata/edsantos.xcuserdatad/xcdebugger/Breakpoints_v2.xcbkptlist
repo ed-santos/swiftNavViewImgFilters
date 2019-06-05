@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NavigationView/DoFfilterController.swift"
-            timestampString = "581387739.966224"
+            timestampString = "581388558.691913"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "applyDOF()"
             landmarkType = "7">
          </BreakpointContent>
