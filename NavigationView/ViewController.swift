@@ -12,27 +12,11 @@ import UIKit
 class ViewController: UIViewController {
     
     //struct can store properties via key/value pair
-    struct orgImage {
-        static var Img = UIImage.init()
-    };
-
-   
-    
-    @IBOutlet weak var ImgViewDisplay: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        orgImage.Img = ImgViewDisplay.image!
-        
-    
         // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func DoF(_ sender: Any) {
-        
-        
     }
     
 }

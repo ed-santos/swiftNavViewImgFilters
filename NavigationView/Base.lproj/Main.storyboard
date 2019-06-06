@@ -10,18 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Img Upload View Controller-->
         <scene sceneID="q45-OG-QNl">
             <objects>
-                <viewController id="ED2-fl-7gZ" sceneMemberID="viewController">
+                <viewController id="ED2-fl-7gZ" customClass="ImgUploadViewController" customModule="NavigationView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNM-W2-Vys">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="8WW-i8-LOi">
-                                <rect key="frame" x="20" y="331" width="374" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select a photo" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-uP-ZdA">
                                 <rect key="frame" x="105" y="171" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,16 +33,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Hz-Hhq">
-                                <rect key="frame" x="291" y="251" width="98" height="41"/>
+                                <rect key="frame" x="179" y="251" width="215" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1137793038" green="0.58427784969999996" blue="0.45576471930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
-                                <state key="normal" title="Select">
+                                <state key="normal" title="Select an Image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="imgUpload:" destination="Mid-YE-bq6" eventType="touchUpInside" id="IFb-oQ-cyu"/>
+                                    <action selector="imgUpload:" destination="ED2-fl-7gZ" eventType="touchUpInside" id="NNh-z6-eb2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBm-WD-Fl1">
-                                <rect key="frame" x="291" y="595" width="98" height="41"/>
+                                <rect key="frame" x="296" y="595" width="98" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1137793038" green="0.58427784969999996" blue="0.45576471930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
@@ -54,18 +54,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="ED2-fl-7gZ" eventType="touchUpInside" id="QJc-Fg-8b7"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="KWs-Bl-xis"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMh-fs-0CI">
+                                <rect key="frame" x="10" y="327" width="394" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27922279090000002" green="0.28961756500000002" blue="0.44747814120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="G55-Kd-D73"/>
                     </view>
                     <navigationItem key="navigationItem" id="5KI-Wm-BjW"/>
+                    <connections>
+                        <outlet property="ImgViewDisplay" destination="gMh-fs-0CI" id="WOx-qS-BqA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yL7-nS-oLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mid-YE-bq6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="38" y="11"/>
+            <point key="canvasLocation" x="37.681159420289859" y="10.714285714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -150,18 +159,11 @@
                                     <segue destination="ZKy-gR-mlB" kind="show" id="WeM-02-oBN"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-iW-ZHb">
-                                <rect key="frame" x="20" y="593" width="374" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27922279090000002" green="0.28961756500000002" blue="0.44747814120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Am9-JC-dbl"/>
-                    <connections>
-                        <outlet property="ImgViewDisplay" destination="ahy-iW-ZHb" id="1ZU-yj-XgR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
